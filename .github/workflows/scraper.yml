@@ -1,0 +1,35 @@
+name: HotRankings Scraper Cron
+
+on:
+  schedule:
+    - cron: '0 */12 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run-scraper:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Execute the Scraping Script
+        run: python scraper.py
+
+      - name: Commit and Push Rankings
+        run: |
+          git config --global user.name "HotRankings-Bot"
+          git config --global user.email "bot@hotrankings.com"
+          git add live_rankings.json
+          git commit -m "Automated update: fresh blood for the rankings" || exit 0
+          git push
