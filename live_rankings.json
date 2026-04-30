@@ -16,35 +16,67 @@
         "hot_score": 550
     },
     {
+        "name": "Janitor AI",
+        "subreddit": "JanitorAI_Official",
+        "base_score": 520,
+        "url": "https://janitorai.com/?ref=YOUR_AFFILIATE_ID",
+        "description": "Massive community-driven bot library with zero filter options.",
+        "hot_score": 520
+    },
+    {
         "name": "Character.ai",
         "subreddit": "CharacterAI",
         "base_score": 500,
         "url": "https://character.ai/?ref=YOUR_AFFILIATE_ID",
-        "description": "The mainstream giant. High traffic, heavy filters.",
+        "description": "The mainstream giant. Massive traffic, brilliant logic, heavy filters.",
         "hot_score": 500
+    },
+    {
+        "name": "SpicyChat AI",
+        "subreddit": "SpicyChatAI",
+        "base_score": 480,
+        "url": "https://spicychat.ai/?ref=YOUR_AFFILIATE_ID",
+        "description": "Aggressive growth, zero filters, and highly responsive chat.",
+        "hot_score": 480
     },
     {
         "name": "Kupid AI",
         "subreddit": "KupidAI",
         "base_score": 450,
         "url": "https://kupid.ai/?ref=YOUR_AFFILIATE_ID",
-        "description": "High conversational quality with voice and video integration.",
+        "description": "High conversational quality with immersive voice and video integration.",
         "hot_score": 450
+    },
+    {
+        "name": "Crushon AI",
+        "subreddit": "CrushonAI",
+        "base_score": 430,
+        "url": "https://crushon.ai/?ref=YOUR_AFFILIATE_ID",
+        "description": "Top-tier Character.ai alternative with unrestricted, raw interactions.",
+        "hot_score": 430
     },
     {
         "name": "DreamGF",
         "subreddit": "DreamGF",
         "base_score": 400,
         "url": "https://dreamgf.ai/?ref=YOUR_AFFILIATE_ID",
-        "description": "Heavy focus on customized visual companion creation.",
+        "description": "Heavy focus on customized, hyper-realistic visual companion creation.",
         "hot_score": 400
+    },
+    {
+        "name": "Yodayo",
+        "subreddit": "YodayoAI",
+        "base_score": 350,
+        "url": "https://yodayo.com/?ref=YOUR_AFFILIATE_ID",
+        "description": "Anime and VTuber focused roleplay with built-in image generation.",
+        "hot_score": 350
     },
     {
         "name": "Replika",
         "subreddit": "replika",
         "base_score": 300,
         "url": "https://replika.com/?ref=YOUR_AFFILIATE_ID",
-        "description": "The original mainstream AI companion. Emotional focus.",
+        "description": "The original mainstream AI companion. Heavy emotional and therapeutic focus.",
         "hot_score": 300
     },
     {
@@ -52,7 +84,7 @@
         "subreddit": "KindroidAI",
         "base_score": 150,
         "url": "https://kindroid.ai/?ref=YOUR_AFFILIATE_ID",
-        "description": "Unfiltered, highly intelligent text generation.",
+        "description": "Unfiltered, highly intelligent text generation with custom selfie capabilities.",
         "hot_score": 150
     },
     {
@@ -60,7 +92,7 @@
         "subreddit": "NomiAI",
         "base_score": 100,
         "url": "https://nomi.ai/?ref=YOUR_AFFILIATE_ID",
-        "description": "Incredibly natural personality traits and retention.",
+        "description": "Incredibly natural personality traits, voice calls, and long-term retention.",
         "hot_score": 100
     }
 ]
