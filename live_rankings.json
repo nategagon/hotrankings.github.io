@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Candy AI",
+        "subreddit": "CandyAI",
+        "base_score": 600,
+        "url": "https://candy.ai/?ref=YOUR_AFFILIATE_ID",
+        "description": "The undisputed king of unfiltered visual generation.",
+        "hot_score": 600
+    },
+    {
+        "name": "JuicyChat.AI",
+        "subreddit": "JuicyChat",
+        "base_score": 550,
+        "url": "https://juicychat.ai/?ref=YOUR_AFFILIATE_ID",
+        "description": "Leading the market in persistent memory and NSFW roleplay.",
+        "hot_score": 550
+    },
+    {
+        "name": "Character.ai",
+        "subreddit": "CharacterAI",
+        "base_score": 500,
+        "url": "https://character.ai/?ref=YOUR_AFFILIATE_ID",
+        "description": "The mainstream giant. High traffic, heavy filters.",
+        "hot_score": 500
+    },
+    {
+        "name": "Kupid AI",
+        "subreddit": "KupidAI",
+        "base_score": 450,
+        "url": "https://kupid.ai/?ref=YOUR_AFFILIATE_ID",
+        "description": "High conversational quality with voice and video integration.",
+        "hot_score": 450
+    },
+    {
+        "name": "DreamGF",
+        "subreddit": "DreamGF",
+        "base_score": 400,
+        "url": "https://dreamgf.ai/?ref=YOUR_AFFILIATE_ID",
+        "description": "Heavy focus on customized visual companion creation.",
+        "hot_score": 400
+    },
+    {
+        "name": "Replika",
+        "subreddit": "replika",
+        "base_score": 300,
+        "url": "https://replika.com/?ref=YOUR_AFFILIATE_ID",
+        "description": "The original mainstream AI companion. Emotional focus.",
+        "hot_score": 300
+    },
+    {
+        "name": "Kindroid",
+        "subreddit": "KindroidAI",
+        "base_score": 150,
+        "url": "https://kindroid.ai/?ref=YOUR_AFFILIATE_ID",
+        "description": "Unfiltered, highly intelligent text generation.",
+        "hot_score": 150
+    },
+    {
+        "name": "Nomi AI",
+        "subreddit": "NomiAI",
+        "base_score": 100,
+        "url": "https://nomi.ai/?ref=YOUR_AFFILIATE_ID",
+        "description": "Incredibly natural personality traits and retention.",
+        "hot_score": 100
+    }
+]
