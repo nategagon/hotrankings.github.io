@@ -3,120 +3,290 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hot Rankings - The Best AI Companions</title>
+    <title>Hot Rankings | The Best AI Companions</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+        :root {
+            --bg-color: #050505;
+            --card-bg: rgba(20, 20, 25, 0.7);
+            --text-main: #f9f9f9;
+            --text-muted: #888;
+            --accent: #ff2a5f;
+            --accent-hover: #ff003c;
+            --gold: #ffb703;
+        }
+        
         body {
-            background-color: #0d1117;
-            color: #c9d1d9;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            background-image: radial-gradient(circle at top, #1a0b14 0%, #050505 40%);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 40px 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            min-height: 100vh;
         }
-        h1 {
-            color: #ff4757;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 5px;
+
+        /* The Live FOMO Counter */
+        .live-counter {
+            background: rgba(255, 42, 95, 0.1);
+            border: 1px solid rgba(255, 42, 95, 0.3);
+            color: var(--accent);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 20px;
+            animation: pulse-glow 2s infinite;
         }
-        p.subtitle {
-            color: #8b949e;
+        .live-dot {
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent);
+            border-radius: 50%;
+        }
+
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 5px rgba(255, 42, 95, 0.2); }
+            50% { box-shadow: 0 0 15px rgba(255, 42, 95, 0.6); }
+            100% { box-shadow: 0 0 5px rgba(255, 42, 95, 0.2); }
+        }
+
+        .header-container {
+            text-align: center;
             margin-bottom: 40px;
         }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+            margin: 0 0 10px 0;
+            background: linear-gradient(135deg, #ff2a5f, #ff7e40);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0px 10px 30px rgba(255, 42, 95, 0.4);
+        }
+
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            margin: 0;
+        }
+
         .container {
             width: 100%;
-            max-width: 800px;
+            max-width: 750px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
+
         .ai-card {
-            background-color: #161b22;
-            border: 1px solid #30363d;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 15px;
+            background-color: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 25px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
         }
+
+        .ai-card:hover {
+            transform: scale(1.02);
+            border-color: rgba(255, 42, 95, 0.4);
+            box-shadow: 0 10px 30px rgba(255, 42, 95, 0.15);
+        }
+
+        /* Exclusive styling for #1 */
+        .rank-1 {
+            background: linear-gradient(180deg, rgba(255, 183, 3, 0.1) 0%, rgba(20, 20, 25, 0.8) 100%);
+            border: 1px solid rgba(255, 183, 3, 0.3);
+        }
+        .rank-1:hover {
+            border-color: var(--gold);
+            box-shadow: 0 10px 40px rgba(255, 183, 3, 0.2);
+        }
+
         .ai-info h2 {
-            margin: 0 0 10px 0;
-            font-size: 1.4rem;
+            margin: 0 0 5px 0;
+            font-size: 1.6rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
         }
+
+        .trending-badge {
+            font-size: 0.7rem;
+            background: linear-gradient(90deg, #ff2a5f, #ff7e40);
+            color: #fff;
+            padding: 4px 10px;
+            border-radius: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
         .ai-info p {
             margin: 0;
-            color: #8b949e;
+            color: var(--text-muted);
+            line-height: 1.5;
+            font-size: 0.95rem;
         }
+
         .hot-score {
-            font-weight: bold;
-            color: #ff4757;
-            margin-top: 10px;
+            font-weight: 700;
+            color: #fff;
+            margin-top: 12px;
             display: inline-block;
+            font-size: 0.85rem;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 6px 12px;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.1);
         }
+
         .visit-btn {
-            background-color: #238636;
+            background: linear-gradient(135deg, var(--accent), #ff7e40);
             color: #ffffff;
             text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 6px;
-            font-weight: bold;
-            transition: background-color 0.2s;
+            padding: 14px 28px;
+            border-radius: 12px;
+            font-weight: 900;
+            font-size: 1rem;
+            text-transform: uppercase;
+            transition: all 0.2s;
+            text-align: center;
+            white-space: nowrap;
+            box-shadow: 0 4px 15px rgba(255, 42, 95, 0.3);
         }
+
         .visit-btn:hover {
-            background-color: #2ea043;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 42, 95, 0.5);
         }
+
         .rank {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #484f58;
-            margin-right: 20px;
-            min-width: 30px;
+            font-size: 3rem;
+            font-weight: 900;
+            color: rgba(255, 255, 255, 0.1);
+            margin-right: 25px;
+            min-width: 50px;
+            text-align: center;
         }
+
+        .rank-number-1 {
+            color: var(--gold);
+            text-shadow: 0 0 20px rgba(255, 183, 3, 0.4);
+        }
+
         .left-section {
             display: flex;
             align-items: center;
+            padding-right: 20px;
+        }
+
+        @media (max-width: 650px) {
+            .ai-card {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px;
+            }
+            .left-section {
+                margin-bottom: 20px;
+            }
+            .visit-btn {
+                width: 100%;
+                box-sizing: border-box;
+            }
+            h1 {
+                font-size: 2.8rem;
+            }
         }
     </style>
 </head>
 <body>
 
-    <h1>Hot Rankings</h1>
-    <p class="subtitle">The internet's live, data-driven AI companion leaderboard.</p>
+    <div class="live-counter">
+        <div class="live-dot"></div>
+        <span id="viewer-count">342</span> Active Users Filtering
+    </div>
+
+    <div class="header-container">
+        <h1>Hot Rankings</h1>
+        <p class="subtitle">The internet's live, data-driven AI companion leaderboard.</p>
+    </div>
 
     <div class="container" id="leaderboard">
-        <p style="text-align:center; color:#8b949e;">Loading live rankings...</p>
+        <p style="text-align:center; color:#888;">Calibrating the heat...</p>
     </div>
 
     <script>
-        // Fetch the JSON file generated by our Python script
-        fetch('live_rankings.json')
-            .then(response => response.json())
-            .then(data => {
-                const leaderboard = document.getElementById('leaderboard');
-                leaderboard.innerHTML = ''; // Clear loading text
+        // Fake FOMO Viewer Counter Logic
+        setInterval(() => {
+            const counter = document.getElementById('viewer-count');
+            let current = parseInt(counter.innerText);
+            // Randomly fluctuate the number up or down slightly
+            let change = Math.floor(Math.random() * 5) - 2; 
+            counter.innerText = current + change;
+        }, 3000);
 
-                data.forEach((ai, index) => {
-                    const card = document.createElement('div');
-                    card.className = 'ai-card';
-                    
-                    card.innerHTML = `
-                        <div class="left-section">
-                            <div class="rank">#${index + 1}</div>
-                            <div class="ai-info">
-                                <h2>${ai.name}</h2>
-                                <p>${ai.description}</p>
-                                <span class="hot-score">🔥 Hot Score: ${ai.hot_score}</span>
-                            </div>
+        // Render Function
+        function renderLeaderboard(data) {
+            const leaderboard = document.getElementById('leaderboard');
+            leaderboard.innerHTML = ''; 
+
+            data.forEach((ai, index) => {
+                const rankNum = index + 1;
+                const card = document.createElement('div');
+                
+                card.className = rankNum === 1 ? 'ai-card rank-1' : 'ai-card';
+                const badgeHtml = rankNum <= 3 ? '<span class="trending-badge">🔥 Hot</span>' : '';
+                const rankClass = rankNum === 1 ? 'rank rank-number-1' : 'rank';
+
+                card.innerHTML = `
+                    <div class="left-section">
+                        <div class="${rankClass}">#${rankNum}</div>
+                        <div class="ai-info">
+                            <h2>${ai.name} ${badgeHtml}</h2>
+                            <p>${ai.description}</p>
+                            <span class="hot-score">⚡ Momentum Score: ${ai.hot_score}</span>
                         </div>
-                        <a href="${ai.url}" target="_blank" class="visit-btn">Visit Site</a>
-                    `;
-                    
-                    leaderboard.appendChild(card);
-                });
+                    </div>
+                    <a href="${ai.url}" target="_blank" class="visit-btn">Claim Access</a>
+                `;
+                leaderboard.appendChild(card);
+            });
+        }
+
+        // Fetch Live Data (with local preview fallback)
+        fetch('live_rankings.json')
+            .then(response => {
+                if (!response.ok) throw new Error("Network response was not ok");
+                return response.json();
             })
+            .then(data => renderLeaderboard(data))
             .catch(error => {
-                document.getElementById('leaderboard').innerHTML = '<p style="color:red; text-align:center;">Failed to load live rankings. The script is currently calculating fresh scores.</p>';
+                console.log("Local or Network Error. Loading Preview Data.");
+                // Fallback Data so you can preview the design locally!
+                const previewData = [
+                    {"name": "Candy AI", "description": "The undisputed king of unfiltered visual generation.", "hot_score": 642, "url": "#"},
+                    {"name": "JuicyChat.AI", "description": "Leading the market in persistent memory and NSFW roleplay.", "hot_score": 589, "url": "#"},
+                    {"name": "Janitor AI", "description": "Massive community-driven bot library with zero filter options.", "hot_score": 540, "url": "#"},
+                    {"name": "Character.ai", "description": "The mainstream giant. Massive traffic, heavy filters.", "hot_score": 512, "url": "#"}
+                ];
+                renderLeaderboard(previewData);
             });
     </script>
 </body>
