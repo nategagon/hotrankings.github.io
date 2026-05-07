@@ -1,98 +1,56 @@
 [
     {
-        "name": "Candy AI",
-        "subreddit": "CandyAI",
-        "base_score": 600,
-        "url": "https://candy.ai/?ref=YOUR_AFFILIATE_ID",
-        "description": "The undisputed king of unfiltered visual generation.",
-        "hot_score": 600
+        "id": 1,
+        "name": "Premium AI Companion Match",
+        "category": "AI Companions",
+        "description": "The highest-rated, uncensored AI companion platform available right now. 100% private, highly responsive, and fully customizable.",
+        "url": "https://t.mbjms.com/412526/9403/0?target=listing&aff_sub5=SF_006OG000004lmDN",
+        "hot_score": 9985,
+        "trending": true
     },
     {
-        "name": "JuicyChat.AI",
-        "subreddit": "JuicyChat",
-        "base_score": 550,
-        "url": "https://juicychat.ai/?ref=YOUR_AFFILIATE_ID",
-        "description": "Leading the market in persistent memory and NSFW roleplay.",
-        "hot_score": 550
+        "id": 2,
+        "name": "Live Cam Network - VIP Access",
+        "category": "Cam Sites",
+        "description": "Instant access to the most active live cam network on the web. Thousands of active, unfiltered rooms available 24/7.",
+        "url": "https://t.mbjms.com/412526/9403/0?target=listing&aff_sub5=SF_006OG000004lmDN",
+        "hot_score": 9850,
+        "trending": true
     },
     {
-        "name": "Janitor AI",
-        "subreddit": "JanitorAI_Official",
-        "base_score": 520,
-        "url": "https://janitorai.com/?ref=YOUR_AFFILIATE_ID",
-        "description": "Massive community-driven bot library with zero filter options.",
-        "hot_score": 520
+        "id": 3,
+        "name": "Local Hookup Matches",
+        "category": "Dating",
+        "description": "The fastest growing adult dating and casual hookup network. Extremely high match rates and instant messaging.",
+        "url": "https://t.mbjms.com/412526/9403/0?target=listing&aff_sub5=SF_006OG000004lmDN",
+        "hot_score": 9420,
+        "trending": true
     },
     {
-        "name": "Character.ai",
-        "subreddit": "CharacterAI",
-        "base_score": 500,
-        "url": "https://character.ai/?ref=YOUR_AFFILIATE_ID",
-        "description": "The mainstream giant. Massive traffic, brilliant logic, heavy filters.",
-        "hot_score": 500
+        "id": 4,
+        "name": "Candy AI - Visual Engine",
+        "category": "AI Companions",
+        "description": "The undisputed king of visual generation and hardcore roleplay. Step into the most realistic visual engine.",
+        "url": "https://t.mbjms.com/412526/9403/0?target=listing&aff_sub5=SF_006OG000004lmDN",
+        "hot_score": 9100,
+        "trending": false
     },
     {
-        "name": "SpicyChat AI",
-        "subreddit": "SpicyChatAI",
-        "base_score": 480,
-        "url": "https://spicychat.ai/?ref=YOUR_AFFILIATE_ID",
-        "description": "Aggressive growth, zero filters, and highly responsive chat.",
-        "hot_score": 480
+        "id": 5,
+        "name": "OurDream RP",
+        "category": "AI Companions",
+        "description": "Unfiltered storytelling and deep memory architecture for serious, long-term roleplayers.",
+        "url": "https://t.mbjms.com/412526/9403/0?target=listing&aff_sub5=SF_006OG000004lmDN",
+        "hot_score": 8950,
+        "trending": false
     },
     {
-        "name": "Kupid AI",
-        "subreddit": "KupidAI",
-        "base_score": 450,
-        "url": "https://kupid.ai/?ref=YOUR_AFFILIATE_ID",
-        "description": "High conversational quality with immersive voice and video integration.",
-        "hot_score": 450
-    },
-    {
-        "name": "Crushon AI",
-        "subreddit": "CrushonAI",
-        "base_score": 430,
-        "url": "https://crushon.ai/?ref=YOUR_AFFILIATE_ID",
-        "description": "Top-tier Character.ai alternative with unrestricted, raw interactions.",
-        "hot_score": 430
-    },
-    {
-        "name": "DreamGF",
-        "subreddit": "DreamGF",
-        "base_score": 400,
-        "url": "https://dreamgf.ai/?ref=YOUR_AFFILIATE_ID",
-        "description": "Heavy focus on customized, hyper-realistic visual companion creation.",
-        "hot_score": 400
-    },
-    {
-        "name": "Yodayo",
-        "subreddit": "YodayoAI",
-        "base_score": 350,
-        "url": "https://yodayo.com/?ref=YOUR_AFFILIATE_ID",
-        "description": "Anime and VTuber focused roleplay with built-in image generation.",
-        "hot_score": 350
-    },
-    {
-        "name": "Replika",
-        "subreddit": "replika",
-        "base_score": 300,
-        "url": "https://replika.com/?ref=YOUR_AFFILIATE_ID",
-        "description": "The original mainstream AI companion. Heavy emotional and therapeutic focus.",
-        "hot_score": 300
-    },
-    {
-        "name": "Kindroid",
-        "subreddit": "KindroidAI",
-        "base_score": 150,
-        "url": "https://kindroid.ai/?ref=YOUR_AFFILIATE_ID",
-        "description": "Unfiltered, highly intelligent text generation with custom selfie capabilities.",
-        "hot_score": 150
-    },
-    {
-        "name": "Nomi AI",
-        "subreddit": "NomiAI",
-        "base_score": 100,
-        "url": "https://nomi.ai/?ref=YOUR_AFFILIATE_ID",
-        "description": "Incredibly natural personality traits, voice calls, and long-term retention.",
-        "hot_score": 100
+        "id": 6,
+        "name": "SpicyChat Uncensored",
+        "category": "AI Companions",
+        "description": "A heavyweight in the unfiltered roleplay niche. Push the limits with zero restrictions.",
+        "url": "https://t.mbjms.com/412526/9403/0?target=listing&aff_sub5=SF_006OG000004lmDN",
+        "hot_score": 8400,
+        "trending": false
     }
 ]
